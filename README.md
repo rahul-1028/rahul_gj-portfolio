@@ -17,7 +17,7 @@ Contact Information
 
 🌐 Live Website
 
-https://rahulgj.github.io/rahul-portfolio/
+https://rahul-1028.github.io/rahul_gj-portfolio/
 
 🛠️ Technologies Used
 
