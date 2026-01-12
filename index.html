@@ -5,117 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rahul Gj | Portfolio</title>
   <style>
-    :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --text: #e5e7eb;
-      --accent: #38bdf8;
-    }
+  :root {
+    --bg: #0f172a;
+    --card: #111827;
+    --text: #e5e7eb;
+    --accent: #38bdf8;
+  }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', 'Poppins', Arial, sans-serif;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Poppins', Arial, sans-serif;
+  }
 
-    body {
-      font-size: 16px;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
+  body {
+    font-size: 16px;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
 
-    header {
-      padding: 2rem;
-      text-align: center;
-    }
+  header {
+    padding: 2rem;
+    text-align: center;
+  }
 
-    header h1 {
-      font-size: 2.2rem;
-      color: var(--accent);
-    }
+  header h1 {
+    font-size: 2.2rem;
+    color: var(--accent);
+  }
 
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  /* ⭐ Center all headings */
+  h2, h3 {
+    text-align: center;
+  }
+
+  .card {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .skill-card {
+    position: relative;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .skill-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.15));
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .skill-card h3 {
+    position: relative;
+    z-index: 1;
+    margin: 0.8rem;
+    font-size: 1.1rem;
+  }
+
+  .skills-grid, .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #020617;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 768px) {
     nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 1rem;
+      flex-direction: column;
     }
-
-    nav a {
-      color: var(--text);
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .card {
-      background: var(--card);
-      padding: 1.5rem;
-      border-radius: 10px;
-      margin-bottom: 1.5rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .skill-card {
-      position: relative;
-      height: 140px;
-      display: flex;
-      align-items: flex-end;
-      font-size: 1.2rem;
-      font-weight: bold;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: #ffffff;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    }
-
-    .skill-card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.15));
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    .skill-card h3 {
-      position: relative;
-      z-index: 1;
-      margin: 0.8rem;
-      font-size: 1.1rem;
-    }
-
-    .skills-grid, .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background: #020617;
-      margin-top: 2rem;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
