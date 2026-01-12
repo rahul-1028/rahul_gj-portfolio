@@ -36,4 +36,4 @@ This website is created to share my professional profile and help recruiters und
 📬 Contact
 
 Feel free to reach out!
-📧 Email: RAHULGJ283@GMAIL.COM
+📧 Email: rahulgj283@gmail.com
