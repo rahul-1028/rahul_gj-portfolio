@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahul Gj | Portfolio</title>
+  <style>
+  :root {
+    --bg: #0f172a;
+    --card: #111827;
+    --text: #e5e7eb;
+    --accent: #38bdf8;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Poppins', Arial, sans-serif;
+  }
+
+  body {
+    font-size: 16px;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  header {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+    color: var(--accent);
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  /* ⭐ Center all headings */
+  h2, h3 {
+    text-align: center;
+  }
+
+  .card {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .skill-card {
+    position: relative;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .skill-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.15));
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .skill-card h3 {
+    position: relative;
+    z-index: 1;
+    margin: 0.8rem;
+    font-size: 1.1rem;
+  }
+
+  .skills-grid, .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #020617;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Rahul Gj</h1>
+    <p>Python Backend Developer | Django | Flask | REST APIs</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="card">
+      <h2>About Me</h2>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; align-items:center;">
+        <img src="professional1.jpg" alt="Professional Photo 1" style="width:100%; border-radius:10px;" />
+        <img src="professional2.jpg" alt="Professional Photo 2" style="width:100%; border-radius:10px;" />
+      </div>
+      <p style="margin-top:1.2rem; font-size:1.08rem; line-height:1.9; text-align:center; max-width:900px; margin-left:auto; margin-right:auto;">
+        I am a <strong>Python Backend Developer</strong> with <strong>4 years of professional experience</strong>, currently working at <strong>Tata Consultancy Services (TCS)</strong> in the <strong>Morgan Stanley – Wealth Management</strong> department.
+        <br/><br/>
+        I specialize in designing and building <strong>scalable, clean, and secure backend systems</strong> using <strong>Python</strong> and modern backend frameworks such as <strong>Django, Flask, and FastAPI</strong>. My expertise includes developing robust <strong>RESTful APIs</strong>, working with <strong>PostgreSQL</strong> databases using <strong>SQLAlchemy ORM</strong>, and ensuring reliable performance in <strong>Linux-based production environments</strong>.
+        <br/><br/>
+        I have hands-on experience with <strong>Docker</strong> for containerization, <strong>Jenkins</strong> for CI/CD automation, and deploying backend applications on <strong>AWS cloud infrastructure</strong>. Currently, I am actively learning <strong>Generative AI and Prompt Engineering</strong>, with a strong interest in integrating <strong>GenAI capabilities into backend APIs</strong> to build intelligent, future-ready systems.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card" style="background-image:url('python.jpg')"><h3>Python</h3></div>
+    <div class="skill-card" style="background-image:url('django.jpg')"><h3>Django</h3></div>
+    <div class="skill-card" style="background-image:url('flask.jpg')"><h3>Flask</h3></div>
+    <div class="skill-card" style="background-image:url('api.jpg')"><h3>REST APIs</h3></div>
+    <div class="skill-card" style="background-image:url('sql.jpg')"><h3>SQL</h3></div>
+    <div class="skill-card" style="background-image:url('linux.jpg')"><h3>Linux</h3></div>
+    <div class="skill-card" style="background-image:url('aws.jpg')"><h3>AWS</h3></div>
+	<div class="skill-card" style="background-image:url('Postgresql.jpg')"><h3>Postgresql</h3></div>
+	<div class="skill-card" style="background-image:url('docker.jpg')"><h3>Docker</h3></div>
+	<div class="skill-card" style="background-image:url('jenkins.jpg')"><h3>Jenkins</h3></div>
+  </div>
+</section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Wealth Management API</h3>
+        <p>Django REST API for managing users and portfolios with JWT authentication.</p>
+      </div>
+      <div class="card">
+        <h3>Flask REST Service</h3>
+        <p>Lightweight Flask API with CRUD operations and token-based auth.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:1.5rem;">Hobbies & Passions</h2>
+    <div class="projects">
+
+      <div class="card">
+        <img src="football.jpg" alt="Football" style="width:100%; border-radius:12px; margin-bottom:1rem;" />
+        <h3 style="font-size:1.3rem; margin-bottom:0.5rem;">Football</h3>
+        <p style="font-size:1.05rem; line-height:1.8; text-align:justify;">
+          I started playing football at a very young age and actively represented my school in <strong>district and state-level tournaments</strong>. During my college years, I continued my journey by competing in <strong>zonal-level matches</strong>. Today, football remains my hobby and a never-ending passion, shaping my teamwork, discipline, and competitive mindset.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="bodybuilding1.jpg" alt="Bodybuilding 1" style="width:100%; border-radius:12px; margin-bottom:0.8rem;" />
+        <img src="bodybuilding2.jpg" alt="Bodybuilding 2" style="width:100%; border-radius:12px; margin-bottom:1rem;" />
+        <h3 style="font-size:1.3rem; margin-bottom:0.5rem;">Bodybuilding</h3>
+        <p style="font-size:1.05rem; line-height:1.8; text-align:justify;">
+          I began following a structured and disciplined bodybuilding routine in <strong>2024</strong> under the guidance of a professional coach and mentor. Since then, I have been progressing consistently with a strong focus on training, nutrition, and recovery. This journey has significantly strengthened my mental resilience and commitment, and I am working towards stepping onto the stage for <strong>open bodybuilding competitions</strong> in the future.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email:   rahulgj283@gmail.com</p>
+      <p>GitHub:  https://github.com/rahul-1028</p>
+      <p>Naukri:  Rahul GJ</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Rahul Gj</p>
+  </footer>
+
+</body>
+</html>
