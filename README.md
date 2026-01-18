@@ -11,7 +11,6 @@ Skills (Python, SQL, Django, Flask, AWS)
 
 Hobbies (Football, Bodybuilding)
 
-Professional & Personal Images
 
 Contact Information
 
